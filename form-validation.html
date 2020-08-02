@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Validation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
+  	<form id="myForm">
+	  <div class="form-group">
+	    <label for="email-id">Email:</label>
+	    <input type="email" class="form-control" id="email-id" placeholder="name@example.com" required>
+	  </div>
+	  <div class="form-group">
+	    <label for="pass">Password:</label>
+	    <input type="password" class="form-control" id="pass" placeholder="Password" required>
+	  </div>
+	  <div>
+	  	<p id="pass-error" class="text-danger"></p>
+	  </div>
+	  <div class="form-group">
+	    <label for="pass">Re-Enter Password:</label>
+	    <input type="password" class="form-control" id="re-pass" placeholder="Re-Enter password" required>
+	  </div>
+	  <div>
+	  	<p id="re-pass-error" class="text-danger"></p>
+	  </div>
+	  <div class="form-group">
+	    <label for="txtarea">What Do You Think:</label>
+	    <textarea class="form-control" id="txtarea" rows="3" placeholder="Share Your Views" required></textarea>
+	  </div>
+	  <div>
+	  	<p id="txtarea-error" class="text-danger"></p>
+	  </div>
+	  <div class="form-group">
+	    <input type="submit" class="form-control" id="submit" style="background-color: green;color: white;">
+	  </div>
+	</form>
+</div>
+<script src="form-validation.js"></script>
+</body>
+</html>
